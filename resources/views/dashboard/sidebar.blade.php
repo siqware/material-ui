@@ -27,79 +27,48 @@
                     <h6 class="mb-0 text-white text-shadow-dark">Victoria Baker</h6>
                     <span class="font-size-sm text-white text-shadow-dark">Santa Ana, CA</span>
                 </div>
-
-                <div class="sidebar-user-material-footer">
-                    <a href="#user-nav" class="d-flex justify-content-between align-items-center text-shadow-dark dropdown-toggle" data-toggle="collapse"><span>Navigation</span></a>
-                </div>
-            </div>
-
-            <div class="collapse" id="user-nav">
-                <ul class="nav nav-sidebar">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="icon-user-plus"></i>
-                            <span>My profile</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="icon-coins"></i>
-                            <span>My balance</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="icon-comment-discussion"></i>
-                            <span>Messages</span>
-                            <span class="badge bg-teal-400 badge-pill align-self-center ml-auto">58</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="icon-cog5"></i>
-                            <span>Account settings</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="icon-switch2"></i>
-                            <span>Logout</span>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
         <!-- /user menu -->
-
-
         <!-- Main navigation -->
         <div class="card card-sidebar-mobile">
             <ul class="nav nav-sidebar" data-nav-type="accordion">
-
                 <!-- Main -->
                 <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
                 <li class="nav-item">
-                    <a href="layout_2/LTR/material/full/index.html" class="nav-link">
+                    <a href="/" class="nav-link">
                         <i class="icon-home4"></i>
-                        <span>Dashboard</span>
+                        <span>ផ្ទាំងដើម</span>
                     </a>
                 </li>
-                <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
-                    <a href="#" class="nav-link"><i class="icon-stack"></i> <span>Starter kit</span></a>
-
+                <li class="nav-item">
+                    <a href="{{route('media')}}" class="nav-link {{request()->is('media')? 'active':''}}">
+                        <i class="icon-images2"></i>
+                        <span>មេឌៀ</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('user.index')}}" class="nav-link {{request()->is('user*')? 'active':''}}">
+                        <i class="icon-users"></i>
+                        <span>អ្នកប្រើប្រាស់</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-item-submenu {{--nav-item-expanded nav-item-open--}}">
+                    <a href="#" class="nav-link"><i class="icon-chevron-down"></i>
+                        <span>Dropdown</span>
+                    </a>
                     <ul class="nav nav-group-sub" data-submenu-title="Starter kit">
-                        <li class="nav-item"><a href="../seed/sidebar_main.html" class="nav-link active">1 sidebar</a></li>
+                        <li class="nav-item"><a href="../seed/sidebar_main.html" class="nav-link">1 sidebar</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a href="../full/changelog.html" class="nav-link">
-                        <i class="icon-list-unordered"></i>
-                        <span>Changelog</span>
-                        <span class="badge bg-blue-400 align-self-center ml-auto">2.2</span>
+                        <i class="icon-bell-plus"></i>
+                        <span>ជូនដំណឹង</span>
+                        <span class="badge badge-pill bg-pink-400 align-self-center ml-auto">2.2</span>
                     </a>
                 </li>
                 <!-- /main -->
-
             </ul>
         </div>
         <!-- /main navigation -->

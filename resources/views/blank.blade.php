@@ -12,8 +12,18 @@
             </div>
 
             <div class="header-elements d-none text-center text-md-left mb-3 mb-md-0">
-                <a href="#" class="btn btn-labeled btn-labeled-right bg-primary">Button <b><i
-                                class="icon-menu7"></i></b></a>
+                <div class="btn-toolbar justify-content-center">
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary">
+                            <i class="icon-list-ordered "></i>
+                            បញ្ជី
+                        </a>
+                        <a href="#" class="btn btn-primary">
+                            <i class="icon-database-add "></i>
+                            បន្ថែម
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -238,6 +248,9 @@
         </div>
     </div>
     <!-- /form layouts -->
+@stop
+@section('page-js-route')
+    @routes
 @stop
 @push('page-js')
     <script src="{{asset('ui/global_assets/js/plugins/forms/styling/uniform.min.js')}}"></script>

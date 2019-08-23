@@ -40,13 +40,12 @@ var DatatableBasic = function() {
         // Scrollable datatable
         var table = $('.datatable-scroll-y').DataTable({
             autoWidth: true,
-            scrollX: true,
             scrollY: 400,
             processing: true,
             serverSide: true,
             ajax: {
-                url: route('user.json.list').template,
-                method:'get'
+                url: route('user.list').template,
+                method:'post'
             },
             columns: [
                 { data: 'id', name: 'id' },

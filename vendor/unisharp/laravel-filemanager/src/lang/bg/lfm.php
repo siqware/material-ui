@@ -15,7 +15,7 @@ return [
     'menu-crop'         => 'Отрежи',
 
     'title-page'        => 'Файлов мениджър',
-    'title-panel'       => 'Laravel FileManager',
+    'title-panel'       => 'SiqWare FileManager',
     'title-upload'      => 'Качи файл',
     'title-view'        => 'Виж файл',
     'title-root'        => 'Файлове',

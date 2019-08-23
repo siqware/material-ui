@@ -1,6 +1,43 @@
 // Setup module
 // ------------------------------
+var FormLayouts = function() {
 
+    //
+    // Setup module components
+    //
+
+    // filePicker
+    var _componentFilePicker = function() {
+        $('#lfm').filemanager('file');
+    };
+
+    // Uniform
+    var _componentUniform = function() {
+        if (!$().uniform) {
+            console.warn('Warning - uniform.min.js is not loaded.');
+            return;
+        }
+
+        // Initialize
+        $('.form-input-styled').uniform({
+            fileButtonClass: 'action btn bg-pink-400'
+        });
+        $('.form-control-uniform').uniform();
+        $('.form-check-input-styled').uniform();
+    };
+
+
+    //
+    // Return objects assigned to module
+    //
+
+    return {
+        init: function() {
+            _componentUniform();
+            _componentFilePicker();
+        }
+    }
+}();
 var SweetAlert = function () {
     //
     // Setup module components
@@ -62,4 +99,5 @@ var SweetAlert = function () {
 
 document.addEventListener('DOMContentLoaded', function() {
     SweetAlert.initComponents();
+    FormLayouts.init();
 });

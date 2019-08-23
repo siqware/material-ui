@@ -1,4 +1,4 @@
-# Laravel Filemanager
+# SiqWare FileManager
 [![Latest Stable Version](https://poser.pugx.org/unisharp/laravel-filemanager/v/stable)](https://packagist.org/packages/unisharp/laravel-filemanager)
 [![Total Downloads](https://poser.pugx.org/unisharp/laravel-filemanager/downloads)](https://packagist.org/packages/unisharp/laravel-filemanager)
 [![License](https://poser.pugx.org/unisharp/laravel-filemanager/license)](https://packagist.org/packages/unisharp/laravel-filemanager)
@@ -10,7 +10,7 @@
    * [Customization](http://unisharp.github.io/laravel-filemanager/customization)
    * [Events](http://unisharp.github.io/laravel-filemanager/events)
    * [Upgrade](http://unisharp.github.io/laravel-filemanager/upgrade)
- * Demo : [Laravel Filemanager container](https://github.com/UniSharp/laravel-filemanager-example-5.3)
+ * Demo : [SiqWare FileManager container](https://github.com/UniSharp/laravel-filemanager-example-5.3)
 
 ## v1.8 released
  * Please follow the intructions in [upgrade document](https://unisharp.github.io/laravel-filemanager/upgrade).

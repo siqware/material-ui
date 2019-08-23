@@ -18,7 +18,7 @@ return [
     'menu-crop'           => 'Bijsnijden',
 
     'title-page'          => 'File Manager',
-    'title-panel'         => 'Laravel FileManager',
+    'title-panel'         => 'SiqWare FileManager',
     'title-upload'        => 'Bestand uploaden',
     'title-view'          => 'Bestand bekijken',
     'title-root'          => 'Bestanden',

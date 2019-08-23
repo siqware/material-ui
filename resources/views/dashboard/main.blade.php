@@ -25,7 +25,7 @@
     <script src="{{asset('ui/global_assets/js/plugins/ui/ripple.min.js')}}"></script>
     <!-- /core JS files -->
     <!-- ziggy route JS files -->
-    @routes
+    @yield('page-js-route')
     <!-- /ziggy route JS files -->
     <!-- custom JS files -->
     <script src="{{asset('js/custom.js')}}"></script>

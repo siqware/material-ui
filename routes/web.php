@@ -11,6 +11,15 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('blank');
 });
+Route::get('/media', function () {
+    return view('media');
+})->name('media');
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('/user', 'UserController');
+Route::post('/user-list', 'UserController@list')->name('user.list');
